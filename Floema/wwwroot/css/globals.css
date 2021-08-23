@@ -1,0 +1,171 @@
+﻿/*resets*/
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+em,
+small,
+strong,
+sub,
+sup,
+mark,
+del,
+ins,
+strike,
+abbr,
+dfn,
+blockquote,
+q,
+cite,
+code,
+pre,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+div,
+section,
+article,
+main,
+aside,
+nav,
+header,
+hgroup,
+footer,
+img,
+figure,
+figcaption,
+address,
+time,
+audio,
+video,
+canvas,
+iframe,
+details,
+summary,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+img {
+    border-style: none;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: "Aribau Grotesk";
+}
+
+:root {
+    /*colors*/
+    --floema-blue: #3B465C;
+    --floema-milk: #E9E8D4;
+    --floema-white: #FFFFFF;
+    --floema-off-black: #333333;
+    /*generics*/
+    --ideal-viewport-width: 1440;
+    --current-viewport-width: clamp(350px, 100vw, 3840px);
+    /*Fonts Generics*/
+    --ideal-h1: 39;
+    --ideal-h2: 33;
+    --ideal-h3: 27;
+    --ideal-h4: 23;
+    --ideal-h5: 19;
+    --ideal-paragraph: 16;
+    --ideal-small: 13.33;
+    /*Fonts Tokens*/
+    --heading-1: calc(var(--ideal-h1) * var(--current-viewport-width) / var(--ideal-viewport-width));
+    --heading-2: calc(var(--ideal-h2) * var(--current-viewport-width) / var(--ideal-viewport-width));
+    --heading-3: calc(var(--ideal-h3) * var(--current-viewport-width) / var(--ideal-viewport-width));
+    --heading-4: calc(var(--ideal-h4) * var(--current-viewport-width) / var(--ideal-viewport-width));
+    --heading-5: calc(var(--ideal-h5) * var(--current-viewport-width) / var(--ideal-viewport-width));
+    --paragraph: calc(var(--ideal-paragraph) * var(--current-viewport-width) / var(--ideal-viewport-width));
+    --small: calc(var(--ideal-small) * var(--current-viewport-width) / var(--ideal-viewport-width));
+}
+
+/*Typography*/
+@font-face {
+    font-family: "Aribau Grotesk Regular";
+    src: url("../assets/fonts/AribauGrotesk-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Aribau Grotesk Medium";
+    src: url("../assets/fonts/AribauGrotesk-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Aribau Grotesk Thin";
+    src: url("../assets/fonts/AribauGrotesk-Thin.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Aribau Grotesk Black";
+    src: url("../assets/fonts/AribauGrotesk-Black.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Aribau Grotesk Bold";
+    src: url("../assets/fonts/AribauGrotesk-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "IntegralCF";
+    src: url("../assets/fonts/IntegralCFRegular.woff2") format("woff");
+}

@@ -1,0 +1,60 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div>
+    <section class="container-featured">
+        <div class="featured">
+            <div class="wrapper-description">
+                <button>see all</button>
+                <div>
+                    <h3>New arrivals</h3>
+                    <p>The Floema Dynasty collection has arrived! Discover all the lastest.</p>
+                </div>
+            </div>
+        </div>
+        <div class="featured">
+            <div class="wrapper-description">
+                <button>view</button>
+                <div>
+                    <h3>SALE! <br /> NEON HOODIE</h3>
+                    <p>The Floema Dynasty collection has arrived! Discover all the lastest.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="marquee">
+        <div class="marquee__inner">
+            <span>we are floema. Home of exquisite apparels</span>
+            <span>we are floema. Home of exquisite apparels</span>
+            <span>we are floema. Home of exquisite apparels</span>
+            <span>we are floema. Home of exquisite apparels</span>
+        </div>
+    </section>
+
+    <div class="main-carousel">
+        @{
+            for (int i = 0; i < 6; i++)
+            {
+                <div class="carousel-cell">
+                    <div class="container-product-image">
+                        <img src="~/assets/images/short.jpg" />
+                    </div>
+                    <div class="product-details">
+                        <span class="product-name">CAMO SWIM SHORTS</span>
+                        <span class="product-price">$209</span>
+                    </div>
+                </div>
+            }
+        }
+        
+    </div>
+
+    <section class="about-us">
+        <p>
+            "WE ARE A FASHION HOUSE WITH TRADITIONAL SENSE, WHERE THE CURIOUSLY CREATIVE AND CREATIVELY CURIOUS GATHER UNDER THE ROOF OF AN INSPIRING HOST."
+        </p>
+    </section>
+</div>  

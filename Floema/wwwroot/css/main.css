@@ -1,0 +1,206 @@
+﻿/*Main*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--floema-milk);
+    background-color: var(--floema-blue);
+    padding: 10px 20px;
+    border-bottom: 3px solid var(--floema-off-black);
+}
+
+nav h1 {
+    font-size: var(--heading-2);
+    font-family: 'Aribau Grotesk Black';
+    text-transform: uppercase;
+}
+
+.container-nav-listing {
+    display: flex;
+    min-width: 50%;
+    justify-content: space-between;
+}
+
+.container-nav-listing a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--floema-milk);
+    font-family: 'Aribau Grotesk Medium';
+    font-size: var(--heading-4);
+}
+
+
+.container-featured {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+}
+
+.container-featured > * {
+    min-width: 50%;
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+
+.container-featured > div:nth-child(1) {
+    background-image: url("https://cdn.shopify.com/s/files/1/0555/7813/2643/files/PUSH-1300-visionnaire_7b2febfa-fba3-4cc9-b4b1-97d080b2ffce_1300x1300.jpg?v=1625663576");
+    background-size: cover;
+}
+
+.container-featured > div:nth-child(2) {
+    background-image: url("https://cdn.shopify.com/s/files/1/0555/7813/2643/files/PUSH-1300-visionnaire-2_2469be26-072b-4748-9312-aa853ca6940b_1300x1300.jpg?v=1625663825");
+    background-size: cover;
+}
+
+.featured {
+    height: calc(712 * var(--current-viewport-width) / var(--ideal-viewport-width));
+    position: relative;
+    padding: 30px;
+    color: var(--floema-white);
+    font-family: 'Aribau Grotesk Regular';
+}
+
+.featured button {
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 30px;
+    align-self: flex-end;
+    outline: none;
+    font-size: var(--heading-5);
+    text-transform: uppercase;
+    color: var(--floema-white);
+}
+
+.featured + .featured {
+    color: var(--floema-off-black);
+}
+
+.featured + .featured button {
+    color: var(--floema-off-black);
+}
+
+.wrapper-description {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - calc(4 * 30px));
+}
+
+.wrapper-description div {
+    max-width: 20em;
+}
+
+.marquee {
+    position: relative;
+    overflow: hidden;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+}
+
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 20s linear infinite;
+}
+
+.marquee span {
+    display: block;
+    font-family: IntegralCF;
+    letter-spacing: .07em;
+    font-size: 50px;
+    color: transparent;
+    margin-left: 2em;
+    min-width: max-content;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black
+}
+    
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
+
+
+/*Product Carousel*/
+.main-carousel {
+   margin: 3rem 30px;
+}
+
+.main-carousel::before {
+    content: "NEW ARRIVALS";
+    font-size: var(--heading-5);
+    font-family: 'Aribau Grotesk Regular';
+}
+
+.flickity-page-dots {
+    bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+    height: 4px;
+    width: 40px;
+    margin: 0;
+    border-radius: 0;
+}
+.carousel-cell {
+    width: 247px;
+    margin-right: 4rem;
+    padding-bottom: 2rem;
+}
+
+.carousel-cell .product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container-product-image {
+    width: inherit;
+    height: 247px;
+}
+
+.container-product-image img {
+    object-fit: cover;
+}
+
+
+.about-us {
+    width: calc(100%);
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us p {
+    font-family: IntegralCF;
+    letter-spacing: .05em;
+    font-size: 50px;
+    color: transparent;
+    max-width: 60%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--floema-blue);
+}
+
+.footer {
+    font-family: "Aribau Grotesk";
+    padding: 2rem 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer small {
+    align-self: flex-end;
+}

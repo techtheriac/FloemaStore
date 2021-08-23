@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Floema</title>
+    <link href="~/css/flickity.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/globals.css" />
+    <link rel="stylesheet" href="~/css/main.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Floema</h1>
+            <ul class="container-nav-listing">
+                <li>
+                    <a href="#">Hoodies</a>
+                </li>
+                <li>
+                    <a href="#">T-SHIRTS</a>
+                </li>
+                <li>
+                    <a href="#">HATS</a>
+                </li>
+                <li>
+                    <a href="#">ALL</a>
+                </li>
+            </ul>
+            <div class="wrapper-cart">
+                <svg width="33" height="51" viewBox="0 0 46 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M41.2109 69.6446H4.50293L7.91374 32.7086H37.8018L41.2109 69.6446Z" stroke="#E9E8D4" stroke-width="1.2" stroke-linejoin="round" />
+                        <path d="M13.8051 32.7617V30.1886C13.8051 27.773 14.7588 25.4563 16.4563 23.7482C18.1539 22.0402 20.4562 21.0806 22.8569 21.0806C25.2576 21.0806 27.5599 22.0402 29.2575 23.7482C30.955 25.4563 31.9087 27.773 31.9087 30.1886V33.2554" stroke="#E9E8D4" stroke-width="1.2" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.57143 9.85714C4.93765 9.41829 3.68714 9.10629 2.55758 10.2994C1.70232 11.2029 1.70743 12.4046 2.3821 13.0509C2.94432 13.5891 3.70077 13.6423 4.50321 13.0954L5.97691 12.0669C7.77432 10.7983 9.55639 10.9011 10.8035 12.0943C12.1767 13.4091 12.4288 15.7817 10.5037 17.8166C8.36551 20.076 5.93262 19.7314 4.52877 18.6497L5.46069 16.8617C6.46758 17.6589 7.94469 17.8063 9.15773 16.5257C10.1663 15.4577 10.1527 14.3914 9.4661 13.7331C8.89195 13.1846 8.02647 13.1691 7.14054 13.7794L5.69239 14.784C4.1318 15.876 2.39062 15.9326 1.06854 14.664C-0.417086 13.2429 -0.343827 10.704 1.22358 9.04457C3.20839 6.948 5.25284 7.35086 6.42839 8.09486L5.57143 9.85714ZM19.5929 7.44514L23.307 7.22571L21.1569 2.32114L19.5946 7.44514H19.5929ZM24.1401 9.10114L18.9864 9.408L18.0323 12.552L15.8499 12.6823L19.874 0.142286L22.2626 0L27.723 11.9777L25.4724 12.1114L24.1401 9.10114ZM34.4714 8.42057C37.1547 5.46514 40.9693 5.71029 43.3085 7.86171C45.5965 9.96686 45.7277 12.5743 44.6919 14.5337L42.8144 13.6971C43.547 12.3514 43.5095 10.6971 41.9983 9.30514C40.5093 7.93714 38.0355 7.65771 36.0371 9.85714C34.1068 11.9811 34.5344 14.4394 36.0728 15.8537C37.5857 17.2457 39.332 17.0674 40.5672 16.3251L41.5468 18.072C39.746 19.2326 37.0371 19.4417 34.7354 17.3246C32.3077 15.0909 31.788 11.3743 34.4731 8.41886" fill="#E9E8D4" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="46" height="72" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container-home">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer">
+        <ul>
+            <li>INSTAGRAM</li>
+            <li>FACEBOOK</li>
+            <li>PROFESSIONAL INQUIRIES</li>
+            <li>TERMS OF SALE</li>
+        </ul>
+        <small>&copy; 2021 - Floema  2021</small>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/flickity.pkgd.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
