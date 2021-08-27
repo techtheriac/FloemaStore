@@ -40,6 +40,7 @@ namespace Floema.Infrastructure.Repositories.Implementations
                 .Include(c => c.ProductMedias)
                 .Select(c => new FeaturedProduct()
                 {
+                    Id = c.ProductId,
                     ProductName = c.ProductName,
                     Category = c.Category.CategoryName,
                     Photos = c.ProductMedias.Select(x => x.Url).ToList(),

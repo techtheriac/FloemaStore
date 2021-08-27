@@ -1,7 +1,7 @@
-﻿@page
+﻿@page "{id}"
 @model Floema.Pages.Product.IndexModel
 @{
     ViewData["Title"] = "Floema Clothings";
 }
 <h1>@ViewData["Title"]</h1>
-<p>This page displays a single product and its details</p>
+<p>@Model.Item.ProductName</p>

@@ -39,7 +39,7 @@
             foreach (var product in Model.Items)
             {
                 <div class="carousel-cell">
-                    <a href="#" class="container-product-image">
+                    <a href="@("Product/" + product.Id)" class="container-product-image">
                         <img src="@product.Photos[0]" />
                     </a>
                     <div class="product-details">

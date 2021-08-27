@@ -27,5 +27,14 @@ namespace Floema.Services.Implementations
         {
             return _productRepository.GetFeaturedProducts();
         }
+
+        public FeaturedProduct GetProduct(string id)
+        {
+            var featuredProducts = GetFeaturedProducts();
+
+            var product = featuredProducts.FirstOrDefault(x => x.Id == id);
+
+            return product;
+        }
     }
 }
