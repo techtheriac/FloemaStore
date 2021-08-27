@@ -36,15 +36,15 @@
 
     <div class="main-carousel">
         @{
-            for (int i = 0; i < 6; i++)
+            foreach (var product in Model.Items)
             {
                 <div class="carousel-cell">
-                    <div class="container-product-image">
-                        <img src="~/assets/images/short.jpg" />
-                    </div>
+                    <a href="#" class="container-product-image">
+                        <img src="@product.Photos[0]" />
+                    </a>
                     <div class="product-details">
-                        <span class="product-name">CAMO SWIM SHORTS</span>
-                        <span class="product-price">$209</span>
+                        <span class="product-name">@product.ProductName</span>
+                        <span class="product-price">@("$" + product.Price )</span>
                     </div>
                 </div>
             }

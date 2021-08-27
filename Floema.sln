@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Floema", "Floema\Floema.csproj", "{31566E11-58E0-43CE-BA0E-9173BB08EA7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Floema", "Floema\Floema.csproj", "{31566E11-58E0-43CE-BA0E-9173BB08EA7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Floema.Domain", "Floema.Domain\Floema.Domain.csproj", "{908C4B9A-1A6F-4C27-B762-A8BA3410C59D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Floema.Domain", "Floema.Domain\Floema.Domain.csproj", "{908C4B9A-1A6F-4C27-B762-A8BA3410C59D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Floema.Infrastructure", "Floema.Infrastructure\Floema.Infrastructure.csproj", "{BA033D63-FFAC-48F8-A57E-8380AEDC0301}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Floema.Infrastructure", "Floema.Infrastructure\Floema.Infrastructure.csproj", "{BA033D63-FFAC-48F8-A57E-8380AEDC0301}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

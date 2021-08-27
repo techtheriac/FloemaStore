@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Floema.Domain.Models;
 
 namespace Floema.Infrastructure.Repositories.Abstractions
 {
-    public interface IGenericRepository<T>
+    public interface ICategoryRepository
     {
-        T Get(string id);
-        IEnumerable<T> All();
+        Category Get(string id); 
+        List<Category> All();
+        bool Add(Category entity);
+
     }
 }

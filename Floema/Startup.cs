@@ -8,7 +8,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Floema.Domain.Models;
 using Floema.Infrastructure;
+using Floema.Infrastructure.Repositories.Abstractions;
+using Floema.Infrastructure.Repositories.Implementations;
+using Floema.Services.Abstractions;
+using Floema.Services.Implementations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
 
@@ -30,6 +35,11 @@ namespace Floema
             services.AddDbContext<ApplicationDbContext>(options => 
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
             );
+
+            services.AddScoped<SeedData>();
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<IProductServices, ProductServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
