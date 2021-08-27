@@ -9,6 +9,10 @@ nav {
     border-bottom: 3px solid var(--floema-off-black);
 }
 
+.logo {
+    color: var(--floema-milk);
+}
+
 nav h1 {
     font-size: var(--heading-2);
     font-family: 'Aribau Grotesk Black';
@@ -203,4 +207,64 @@ nav h1 {
 
 .footer small {
     align-self: flex-end;
+}
+
+.container-product {
+    display: grid;
+    grid-template-columns: 300px 2fr 1fr;
+    position: relative;
+}
+
+.wrapper-product-image {
+    padding: 2rem 1rem;
+
+}
+
+.wrapper-product-shipping {
+    padding: 2rem;
+}
+
+.wrapper-product-shipping .product-price {
+    font-size: var(--ideal-h3);
+}
+
+.wrapper-product-shipping > * + * {
+    margin-top: 3rem;
+}
+
+.btn-cart {
+    font-size: var(--ideal-h3);
+    padding: 10px 25px;
+    background-color: black;
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+
+.wrapper-sizes > * {
+    border: 1px solid black;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: var(--ideal-paragraph);
+}
+
+.wrapper-properties {
+    border-top: 1px solid black;
+}
+
+.wrapper-properties span {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.wrapper-properties > * + * {
+    border-left: 1px solid black;
+}
+
+.wrapper-delivery > p {
+    font-size: var(--ideal-paragraph);
+}
+.wrapper-delivery > * + * {
+    margin-top: 1rem;
 }
