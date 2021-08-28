@@ -268,3 +268,8 @@ nav h1 {
 .wrapper-delivery > * + * {
     margin-top: 1rem;
 }
+
+/*--------------Products Listing----------------*/
+.product-grid-item {
+    width: 25%;
+}

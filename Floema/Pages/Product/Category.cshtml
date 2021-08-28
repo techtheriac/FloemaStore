@@ -1,0 +1,21 @@
+﻿@page "{id}"
+@model Floema.Pages.Product.CategoryModel
+@{
+}
+
+<div class="wrapper-product-grid">
+    @{
+        foreach (var product in Model.Items)
+        {
+            <div class="product-grid-item">
+                <a href="@("/Product/" + product.Id)">
+                    <img src="@product.Photos[0]" />
+                </a>
+                <div class="product-details">
+                    <span class="product-name">@product.ProductName</span>
+                    <span class="product-price">@("$" + product.Price )</span>
+                </div>
+            </div>
+        }
+    }
+</div>
