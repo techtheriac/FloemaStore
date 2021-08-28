@@ -10,3 +10,15 @@ $('.main-carousel').flickity({
     contain: true
 });
 
+//$('.wrapper-product-grid').packery({
+//    // options
+    
+//});
+
+
+var $grid = $('.wrapper-product-grid').imagesLoaded(function() {
+    $grid.packery({
+        itemSelector: '.product-grid-item',
+        gutter: 10
+    });
+});

@@ -3,5 +3,52 @@
 @{
     ViewData["Title"] = "Floema Clothings";
 }
-<h1>@ViewData["Title"]</h1>
-<p>@Model.Item.ProductName</p>
+
+<div class="container-product">
+    <div class="wrapper-product-gallery">
+        @{
+            foreach (var image in Model.Item.Photos)
+            {
+                <div class="image-item-wrapper">
+                    <img src="@image" width="100%"/>
+                </div>               
+            }
+        }
+    </div>
+    <div class="wrapper-product-image">
+        <img src="@Model.Item.Photos[2]" width="100%"/>
+    </div>
+    <div class="wrapper-product-shipping">
+
+            <small class="product-price">$ @Model.Item.Price</small>
+
+            <div class="wrapper-sizes">
+                <span>XS</span>
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+
+            <button class="btn-cart">ADD TO CART</button>
+
+        <div class="wrapper-properties">
+            <span>MADE IN NIGERIA</span>
+            <span>100% COTTON</span>
+            <span>UNISEX</span>
+        </div>
+        <p>@Model.Item.ProductDescription</p>
+
+        <div class="wrapper-delivery">
+            <h3>DELIVERY AND RETURNS</h3>
+            <p>
+                We deliver all over the world!
+                Allow on average 3/5 working days to receive your package in mainland France, and on average 10 working days to receive your package in other countries.
+            </p>
+            <p>
+                We accept returns, exchanges and refunds.
+                See conditions
+            </p>
+        </div>
+    </div>
+</div>
