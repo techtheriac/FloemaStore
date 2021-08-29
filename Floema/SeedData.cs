@@ -32,8 +32,8 @@ namespace Floema
                 context.Database.EnsureCreated();
                 if (!context.Categories.Any())
                 {
-                    var baseDir = Path.Combine(WebHostEnvironment.WebRootPath, "data", "Categories.json");
-                    var data = File.ReadAllText(baseDir);
+                    //var baseDir = Path.Combine(WebHostEnvironment.WebRootPath, "data", "Categories.json");
+                    var data = File.ReadAllText(Path.Combine(WebHostEnvironment.WebRootPath, "data", "Categories.json"));
                     var dataSeeder = JsonConvert.DeserializeObject<List<Category>>(data);
 
                     await context.Categories.AddRangeAsync(dataSeeder);
@@ -42,7 +42,7 @@ namespace Floema
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
+                throw new Exception("Error Seeding", e);
             }
         }
     }

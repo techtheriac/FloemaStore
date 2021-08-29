@@ -2,7 +2,7 @@
 
 namespace Floema.Infrastructure.Migrations
 {
-    public partial class IntialMigration : Migration
+    public partial class initialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
