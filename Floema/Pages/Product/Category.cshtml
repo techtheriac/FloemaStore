@@ -4,16 +4,19 @@
 }
 
 <div class="wrapper-product-grid">
+    <h1 class="category-name">
+        @Model.Items.First().Category
+    </h1>
     @{
         foreach (var product in Model.Items)
         {
             <div class="product-grid-item">
                 <a href="@("/Product/" + product.Id)">
-                    <img src="@product.Photos[0]" />
+                    <img src="@product.Photos[0]"/>
                 </a>
                 <div class="product-details">
                     <span class="product-name">@product.ProductName</span>
-                    <span class="product-price">@("$" + product.Price )</span>
+                    <span class="product-price">@("$" + product.Price)</span>
                 </div>
             </div>
         }

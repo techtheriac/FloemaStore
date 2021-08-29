@@ -45,7 +45,8 @@ namespace Floema.Infrastructure.Repositories.Implementations
                     Category = c.Category.CategoryName,
                     Photos = c.ProductMedias.Select(x => x.Url).ToList(),
                     Price = c.Price,
-                    ProductDescription = c.ProductDescription
+                    ProductDescription = c.ProductDescription,
+                    CategoryId = c.CategoryId
                 });
 
             return featuredProducts.ToList();

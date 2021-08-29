@@ -20,7 +20,7 @@ namespace Floema.Pages.Product
         }
         public void OnGet(string id)
         {
-            Items = _productServices.GetFeaturedProducts().Where(x => x.Category == id);
+            Items = _productServices.GetFeaturedProducts().Where(x => x.CategoryId == id);
         }
     }
 }

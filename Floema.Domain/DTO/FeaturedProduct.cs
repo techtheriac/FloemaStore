@@ -16,6 +16,7 @@ namespace Floema.Domain.DTO
         public decimal Price { get; set; }
 
         public string Category;
+        public string CategoryId { get; set; }
         public List<string> Photos { get; set; }
     }
 }

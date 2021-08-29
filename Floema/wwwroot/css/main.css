@@ -273,3 +273,18 @@ nav h1 {
 .product-grid-item {
     width: 25%;
 }
+
+.category-name {
+    position: fixed;
+    top: 30%;
+    right: 20px;
+    font-family: IntegralCF;
+    letter-spacing: .07em;
+    font-size: 50px;
+    color: transparent;
+    min-width: max-content;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--floema-blue);
+    transform: rotate(-90deg);
+    z-index: 4;
+}
